@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reto Entelgy</title>
+	<meta charset="utf-8">
+    <link  rel="icon"   href="img/Entelgy-favicon.png" type="image/png" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		 <section class="texto-header">
+            <h1>Lista de países</h1>
+            <h2>Con Capital, población y continente</h2>
+            <h3>Seleccione el titulo del país para vizualizar el continente al que pertenece.</h3>
+        </section>
+	</header>
+	<div class="content">
+		<div class="main-content">
+			<table border="1" class="table-paises">
+				<thead>
+					<tr class="table-header">
+						<th>N°</th>
+						<th>Pais</th>
+						<th>Capital</th>
+						<th>Población</th>
+					</tr>
+				</thead>
+				<tbody class="table-body"></tbody>
+			</table>
+		</div>
+	</div>
+	<footer>
+		 <div class="footer-body">
+            <h3>¿Deseas saber más sobre paises? </h3>
+             <div class="">
+			   <p>Para saber cuántos países hay en el mundo en la actualidad, la referencia más fiable es contar con el número de Estados integrados en la Organización de las Naciones Unidas (ONU). </p>
+			   <p>En ella, hay 193 Estados miembros además de dos Estados observadores que no son miembros: Palestina y la Santa Sede. Así, serían 195 Estados.</p>
+			 </div>
+        </div>
+	</footer>
+	<div class="overlay" id="overlay">
+		<div class="popup" id="popup" style="">
+			<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><img src="img/cerrar.png" /></a>
+			<div id="content-modal">
+				<span><strong class="modal-pais"></strong> pertenece a: <strong class="modal-continente"></strong></span>
+				<img src="" class="img-continente" />
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
